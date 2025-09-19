@@ -2,28 +2,26 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Poprawa_Strona</title>
+  <title>Poprawa GitHub</title>
   <style>
-    body {
-      background-color: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    div {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  animation-name: myAnimation;
+  animation-duration: 4s;
     }
-
+    @keyframes myAnimation {
+        from {background-color: pink;}
+        to {background-color: purple;}
     .box {
-      width: 150px;
+      width: 150px;   
       height: 150px;
-      background: orange;
-      border-radius: 20px;
+      background: orange; 
+      border-radius: 20px; 
       animation: moveBox 4s linear infinite alternate;
     }
 
-    @keyframes moveBox {
-      from { transform: translateX(-250px); }
-      to   { transform: translateX(250px); }
-    }
   </style>
 </head>
 <body>
